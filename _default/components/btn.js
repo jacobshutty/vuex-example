@@ -1,6 +1,6 @@
 const btn = {
   name: "Btn",
   template: `
-    <button>FIND OUT</button>
+    <button>CLICK ME</button>
   `,
 };

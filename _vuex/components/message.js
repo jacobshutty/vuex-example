@@ -1,13 +1,13 @@
 const message = {
   name: "Message",
-  data: function() {
-    return {
-      text: "Vuex is...",
-    };
+  computed: {
+    message() {
+      return this.$store.state.message;
+    },
   },
   template: `
     <h1 class="message">
-      {{text}}
+      {{message}}
     </h1>
   `,
 };
