@@ -1,21 +1,23 @@
 const vm = new Vue({
-  el: "#app",
+  el: '#app',
   components: { btn, message },
   data: function() {
     return {
-      message: "Vuex is...",
+      message: 'Vuex is...',
     };
   },
   methods: {
     handleClick() {
-      this.message = "Amazing!";
+      this.message = 'Amazing!';
     },
   },
   template: `
     <div class="message-generator">
-      <div class="wrapper">
-        <message v-bind:text="message"></message>
-        <btn v-on:btnClicked="handleClick"></btn>
+      <div class="message-box">
+        <div class="message-box-wrap">
+          <message v-bind:text="message"></message>
+          <btn v-on:btnClicked="handleClick"></btn>
+        </div>
       </div>
     </div>
   `,

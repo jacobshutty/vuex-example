@@ -1,11 +1,11 @@
 const btn = {
-  name: "Btn",
+  name: 'Btn',
   methods: {
     handleClick() {
-      this.$store.commit("setMessage", "Amazing!");
+      this.$store.commit('setMessage', 'Amazing!');
     },
   },
   template: `
-    <button v-on:click="handleClick">CLICK ME</button>
+    <button v-on:click="handleClick">CHANGE TEXT</button>
   `,
 };

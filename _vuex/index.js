@@ -1,11 +1,11 @@
 const store = new Vuex.Store({
   state: {
-    message: "Vuex is...",
+    message: 'Vuex is...',
   },
   actions: {
     duplicateMessage({ commit }, message) {
-      const newMessage = message + " " + message;
-      commit("setMessage", newMessage);
+      const newMessage = message + ' ' + message;
+      commit('setMessage', newMessage);
     },
   },
   mutations: {
@@ -21,7 +21,7 @@ const store = new Vuex.Store({
 });
 
 const vm = new Vue({
-  el: "#app",
+  el: '#app',
   store,
   data: function() {
     return {};
@@ -30,9 +30,11 @@ const vm = new Vue({
   components: { btn, message },
   template: `
     <div class="message-generator">
-      <div class="wrapper">
-        <message></message>
-        <btn></btn>
+      <div class="message-box">
+        <div class="message-box-wrap">
+          <message></message>
+          <btn></btn>
+        </div>
       </div>
     </div>
   `,

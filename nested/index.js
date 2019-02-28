@@ -3,7 +3,8 @@ const vm = new Vue({
   components: { topNav, popup },
   template: `
     <div class="message-generator">
-      <div class="wrapper">
+      <div class="message-box">
+      Index
         <topNav></topNav>
         <popup></popup>
       </div>

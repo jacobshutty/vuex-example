@@ -1,11 +1,13 @@
 const vm = new Vue({
-  el: "#app",
+  el: '#app',
   components: { btn, message },
   template: `
     <div class="message-generator">
-      <div class="wrapper">
-        <message></message>
-        <btn></btn>
+      <div class="message-box">
+        <div class="message-box-wrap">
+          <message></message>
+          <btn></btn>
+        </div>
       </div>
     </div>
   `,

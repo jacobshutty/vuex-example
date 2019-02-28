@@ -1,6 +1,6 @@
 const btn = {
-  name: "Btn",
+  name: 'Btn',
   template: `
-    <button>CLICK ME</button>
+    <button>CHANGE TEXT</button>
   `,
 };
